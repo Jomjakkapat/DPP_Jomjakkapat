@@ -28,7 +28,7 @@ def is_in_check(*rows: str) -> bool | None:
             while 0 <= row < size and 0 <= column < size:
                 piece = rows[row][column]
                 if piece in "BQR":
-                    is_straight = row_step == 0 or column_step == 0
+                    is_straight = row_step == 0 or column_step == 0 
                     if piece == "Q" or (piece == "R" and is_straight) or (
                         piece == "B" and not is_straight
                     ):
